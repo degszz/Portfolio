@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="My Portfolio.">
+	<div class="flex justify-center">
+		<div class="w-fit dark:text-white text-center">
+			<h1 class="text-3xl underline"><b>Hi! 👋<br>This is My Portfolio</b></h1>
+			<p class="text-md">This portfolio is to show my projects,<br>as well as demonstrate the languages<br>I know and how I use them.</p>
+		</div>
+		<div class="css-peeps"></div>
+
+	</div>
+</Layout>
+<style>
+	@import url(https://unpkg.com/css-peeps@1/css-peeps.css);
+
+	.css-peeps {
+		--peep-head: twists1;
+		--peep-face: calm;
+		--peep-accessory: glasses5;
+		--peep-body: coffee;
+
+		--peep-hat-color: #654206;
+		--peep-hair-color: #7d4608;
+		--peep-skin-color: #f5d0ad;
+		--peep-accessory-color: #ffffff;
+		--peep-facial-hair-color: #ffffff;
+		--peep-object-color: #4a5989;
+		--peep-clothes-color: #9cb6dd;
+
+		display: block;
+		width: 300px;
+		height: 300px;
+		background: #262c40;
+		border-radius: 100%;
+		border: 2px solid var(--peep-accessory-color);
+	}
+	@media (max-width: 768px) {
+		.css-peeps {
+			width: 150px;
+			height: 150px;
+		}
+	}
+	@media (max-width: 530px) {
+		.css-peeps {
+			display: none;
+		}
+	}
+</style>
