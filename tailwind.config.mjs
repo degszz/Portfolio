@@ -6,6 +6,7 @@ export default {
 			height: {
 				'custom-calc': 'calc(100vh - 65px)',
 				'custom--calc': 'calc(100vh - 51px)',
+				'custom-casi':'calc(100vh - 200px)',
 			},
 			fontFamily: {
 

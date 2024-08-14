@@ -5,12 +5,83 @@ import Card from "../components/Card.astro";
 
 <Layout title="My Portfolio.">
 	<div class="flex justify-center">
-		<div class="w-fit dark:text-white text-center">
-			<h1 class="text-3xl underline"><b>Hi! 👋<br>This is My Portfolio</b></h1>
-			<p class="text-md">This portfolio is to show my projects,<br>as well as demonstrate the languages<br>I know and how I use them.</p>
+		<div
+			class="lg:min-w-[1000px] lg:max-w-[1000px] flex flex-col justify-center sm:justify-center items-center h-custom-casi"
+		>
+			<div class="flex justify-start w-full">
+				<div class="css-peeps"></div>
+			</div>
+			<div class="h-fit w-full mx-4 text-start dark:text-white flex-col">
+				<div class="my-2.5">
+					<h1 class="text-3xl underline">
+						<b>Hey! soy Maximo </b>
+					</h1>
+					<p
+						class="text-xl max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[500px]"
+					>
+						+2 años de experiencia. <b class="text-kai-button"
+							>Developer ux/ui Front-end
+						</b> de Buenos Aires, Argentina. Especializado en el desarrollo
+						de aplicaciones web únicas.
+					</p>
+				</div>
+				<div class="flex">
+					<button
+						class="bg-kai-button mr-2 mb-2 px-2.5 py-1.5
+text-white font-medium text-center
+justify-center inline-flex items-center flex-row
+rounded-lg border gap-x-2 opacity-90
+cursor-pointer hover:bg-kai-hover hover:text-white
+hover:opacity-100 hover:bg-black-600
+hover:scale-110 hover:shadow-lg
+dark:focus:ring-black-300
+focus:ring-2 focus:outline-none focus:ring-black-30
+transition-all duration-200 ease-in-out scale-90"
+					>
+						<a href="">Contactame</a>
+					</button>
+					<button
+						class="bg-kai-button mr-2 mb-2 px-2.5 py-1.5
+text-white font-medium text-center
+justify-center inline-flex items-center flex-row
+rounded-lg border gap-x-2 opacity-90
+cursor-pointer hover:bg-kai-hover hover:text-white
+hover:opacity-100 hover:bg-black-600
+hover:scale-110 hover:shadow-lg
+dark:focus:ring-black-300
+focus:ring-2 focus:outline-none focus:ring-black-30
+transition-all duration-200 ease-in-out scale-90"
+					>
+						<a href="">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+								><path
+									stroke="none"
+									d="M0 0h24v24H0z"
+									fill="none"></path><path
+									d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+								></path><path d="M8 11l0 5"></path><path
+									d="M8 8l0 .01"></path><path d="M12 16l0 -5"
+								></path><path d="M16 16v-3a2 2 0 0 0 -4 0"
+								></path></svg
+							>
+						</a>
+					</button>
+				</div>
+			</div>
 		</div>
-		<div class="css-peeps"></div>
-
+	</div>
+	<div class="">
+		
 	</div>
 </Layout>
 <style>
@@ -31,21 +102,10 @@ import Card from "../components/Card.astro";
 		--peep-clothes-color: #9cb6dd;
 
 		display: block;
-		width: 300px;
-		height: 300px;
+		width: 100px;
+		height: 100px;
 		background: #262c40;
 		border-radius: 100%;
 		border: 2px solid var(--peep-accessory-color);
-	}
-	@media (max-width: 768px) {
-		.css-peeps {
-			width: 150px;
-			height: 150px;
-		}
-	}
-	@media (max-width: 530px) {
-		.css-peeps {
-			display: none;
-		}
 	}
 </style>
