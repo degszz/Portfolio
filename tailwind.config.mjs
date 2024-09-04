@@ -9,7 +9,7 @@ export default {
 				'custom-casi':'calc(100vh - 200px)',
 			},
 			fontFamily: {
-
+				
 			},
 			colors: {
 				'kai': {
